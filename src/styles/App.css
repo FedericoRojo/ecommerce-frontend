@@ -1,0 +1,11 @@
+/* Make the entire page a flex container */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+.app-container {
+    flex: 1; 
+}

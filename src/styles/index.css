@@ -1,0 +1,100 @@
+/* Reset box model to make elements more predictable */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default padding and margin on body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* You can set your preferred default font */
+    line-height: 1.5; /* Improved readability */
+    background-color: #f9f9f9; /* Neutral background color */
+    color: #333; /* Default text color */
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default button and input styles */
+button,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit; /* Use the same font as the parent element */
+    outline: none;
+}
+
+/* Make images and videos responsive */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure consistent display for block-level elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Reset inherited borders */
+fieldset {
+    border: none;
+}
+
+/* Reset progress element appearance */
+progress {
+    appearance: none;
+}
+
+/* Set consistent cursor for buttons */
+button {
+    cursor: pointer;
+}
+
+/* Clear forms visually */
+textarea {
+    resize: none; /* Prevent resizing */
+}
+
+/* Prevent iOS form elements zooming on focus */
+input,
+button,
+textarea,
+select {
+    font-size: 100%;
+}

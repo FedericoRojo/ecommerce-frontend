@@ -1,0 +1,218 @@
+/* General container styles */
+.product-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.product-information-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info-data {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.product-info-data img {
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+    border-radius: 8px;
+    max-height: 400px;
+}
+
+
+.product-info-data-details h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product-info-data-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-info-payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-selector {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.quantity-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #0056b3;
+}
+
+.quantity-input {
+    color: #000 !important;
+    background-color: #fff !important;
+    width: 50px;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pay-button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pay-button  button:hover {
+    background-color: #218838;
+}
+
+/* Other products section */
+.other-products-container {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.other-products-container h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+.other-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.other-product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.other-product-card img {
+    width: 200px;
+    height: 200px;
+    max-height: 200px;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.other-product-card h3 {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.other-product-card button {
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.other-product-card button:hover {
+    background-color: #0056b3;
+}
+
+.image-container  .cat-page-cat-status{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-page-container {
+        padding: 15px;
+    }
+
+    .product-information-container {
+        flex-direction: column;
+    }
+
+    .product-info-data img {
+        max-height: 300px;
+    }
+
+    .quantity-selector {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .other-products {
+        flex-direction: column;
+    }
+
+    .other-product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-info-data-details h2 {
+        font-size: 20px;
+    }
+
+    .product-info-data-details p {
+        font-size: 14px;
+    }
+
+    .product-info-payment button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    .other-product-card h3 {
+        font-size: 14px;
+    }
+}

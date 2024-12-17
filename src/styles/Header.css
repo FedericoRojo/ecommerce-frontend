@@ -1,0 +1,211 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa; 
+    padding: 10px 20px; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.content-header h1 {
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    margin: 0;
+}
+
+.content-header button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.right-content-header,
+.left-content-header {
+    display: flex;
+    gap: 10px; 
+}
+
+.search-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; 
+    overflow: hidden;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px; 
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-bar i {
+    padding: 10px 15px;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    left: 10%;
+    width: 20%; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.dropdown-menu > ul > li {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.dropdown-menu > ul > li:hover {
+    background-color: #f0f0f0;
+}
+
+  
+/* Submenu styles */
+.sub-menu {
+    display: none; 
+    position: absolute;
+    top: 0; 
+    left: 100%; 
+    width: 70%; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  
+.sub-menu li {
+    padding: 8px 12px;
+    white-space: nowrap; 
+}
+  
+.sub-menu li:hover {
+    background-color: #f0f0f0;
+}
+  
+.dropdown-menu > ul > li:hover > .sub-menu {
+    display: block;
+}
+
+
+.dropdown-menu li:hover > .sub-menu {
+    display: block; 
+}
+  
+  
+
+/* Dropdown Menu Styles */
+.search-results {
+    position: absolute;
+    top: 100%; 
+    left: auto;
+    width: 50%; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+.search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results > ul > li > img {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+}
+  
+.search-results > ul > li {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+  
+.search-results > ul > li:hover {
+    background-color: #f0f0f0;
+}
+
+.cart-button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 1.2rem; 
+}
+
+.cart-button:hover {
+    color: #007bff; 
+}
+
+.cart-button i {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    font-size: 0.8rem; 
+    margin-left: 5px; 
+    color: #007bff; 
+    font-weight: bold;
+}
